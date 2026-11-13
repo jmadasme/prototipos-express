@@ -1,0 +1,23 @@
+# ============================================================
+# Configuracion de deploy para Netlify — PrototiposExpress
+# ============================================================
+
+[build]
+  publish = "frontend"
+  # No se necesita comando de build (es HTML/CSS/JS plano)
+
+# Redirigir todas las rutas al index.html (SPA fallback)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ============================================================
+# Encabezados de seguridad
+# ============================================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

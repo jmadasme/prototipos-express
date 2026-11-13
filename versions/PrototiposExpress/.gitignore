@@ -1,0 +1,10 @@
+# Archivos de documentacion interna (NO subir a GitHub)
+PLAN.md
+AUDIT_REPORT.md
+
+# Variables de entorno (contiene credenciales)
+backend/.env
+
+# Python cache
+__pycache__/
+*.pyc
