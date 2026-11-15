@@ -33,6 +33,38 @@ npm install && npm run dev
 
 Las variables de entorno y el destino de los formularios no se incluyen. Sin ellas el backend no envía nada.
 
+<!-- ficha -->
+## Ficha de evaluación
+
+**Madurez global: 3.2/5**
+
+| Criterio | Nota | Evidencia |
+|---|---:|---|
+| Madurez | 2/5 | Landing y backend mínimo sin autenticación, persistencia ni pruebas automatizadas; el alcance declarado es validar demanda. |
+| Reproducibilidad | 3/5 | El frontend se sirve con cualquier servidor HTTP; el backend exige Python 3.9+, dependencias y credenciales SMTP válidas. |
+| Documentación | 4/5 | README, datasheet y guía de desarrollador cubren instalación, API y despliegue; la descripción del flujo alterna Netlify y Flask. |
+| Honestidad de límites | 3/5 | Declara que no hay base de datos, autenticación ni backend en producción, pero la arquitectura y el flujo del formulario se contradicen. |
+| Valor demostrativo | 3/5 | Muestra captación, validación en dos capas y despliegue estático; los casos y métricas del README son ilustrativos, no resultados verificados. |
+| Facilidad de despliegue | 4/5 | Netlify publica la carpeta frontend sin build; el backend opcional requiere variables de entorno y un servidor WSGI. |
+
+Es un ejercicio de validación temprana: landing estática y backend mínimo, con límites claros y una documentación más ambiciosa que el producto. El conjunto sirve para medir interés, no para operar un servicio.
+
+## Lo que no funcionó
+
+### PrototiposExpress — Formulario atado a Netlify
+
+El formulario envía a Netlify Forms mediante fetch a la raíz del sitio, de modo que solo confirma envíos cuando la página está desplegada en Netlify. El backend Flask existe, pero el README indica cambiar a mano la URL a /api/contacto para probarlo localmente. Se mantuvo el sitio estático y el backend como alternativa de desarrollo.
+
+### PrototiposExpress — Leads solo por correo
+
+Los datos del formulario no se guardan en una base: se envían por correo y quedan solo en la bandeja de destino. El README descarta autenticación, cuentas y persistencia, así que no hay forma de consultar, deduplicar ni medir leads desde el sitio. La limitación es explícita y acota el uso a validación inicial.
+
+### PrototiposExpress — Credenciales SMTP manuales
+
+El envío real depende de una cuenta de Gmail con verificación en dos pasos y una contraseña de aplicación configurada en variables de entorno. Sin SMTP_USER y SMTP_PASS, el backend responde con error de configuración. El servidor Flask se declara solo para desarrollo y no se despliega en Netlify.
+
+<!-- /ficha -->
+
 ## Documentación
 
 - [`docs/datasheet.md`](docs/datasheet.md) — instalación, operación y límites.
@@ -40,9 +72,9 @@ Las variables de entorno y el destino de los formularios no se incluyen. Sin ell
 - [`docs/REFERENCES.md`](docs/REFERENCES.md) — estándares, librerías y fuentes.
 - [`docs/index.html`](docs/index.html) — página del proyecto (GitHub Pages).
 
-## Alcance y honestidad
+## El proyecto en detalle
 
-## PrototiposExpress
+### PrototiposExpress
 
 Landing page profesional para la captura de interesados en servicios de prototipado rapido de soluciones de software y hardware. El sistema permite que un cliente potencial solicite una reunion sin compromiso, detalle su necesidad y plazo deseado, y reciba un prototipo funcional gratuito para testeo. Solo si el prototipo demuestra valor real, el cliente paga por el servicio.
 

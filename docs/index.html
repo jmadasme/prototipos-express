@@ -134,6 +134,75 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
   .stat{border-right:0;border-bottom:1px solid var(--line)}
   h1{font-size:42px}
 }
+
+/* ── Contenido heredado del proyecto original, en clave sobria ── */
+.rich{max-width:78ch}
+.rich p{margin:0 0 14px;color:#c3d4da}
+.rich h3{margin:26px 0 10px;font-size:19px;letter-spacing:-.02em}
+.rich h4{margin:22px 0 8px;font-size:15px;letter-spacing:-.01em}
+.rich ul,.rich ol{margin:0 0 16px;padding-left:22px;color:#c3d4da}
+.rich li{margin:0 0 6px}
+.rich figure{margin:22px 0;border:1px solid var(--line);border-radius:16px;padding:10px;background:rgba(11,34,43,.5)}
+.rich figure img{width:100%;display:block;border-radius:10px}
+.rich figcaption{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:9px;line-height:1.5}
+.rich .table-wrap{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:12px}
+.rich table{border-collapse:collapse;width:100%;font-size:13.5px}
+.rich th,.rich td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.rich th{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(11,34,43,.6)}
+.rich tr:last-child td{border-bottom:0}
+.rich pre{margin:18px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#04141a;overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.6;color:#cfe3e8}
+.rich code{font-family:var(--mono);font-size:.92em}
+.rich .note{margin:18px 0;padding:13px 16px;border-left:2px solid var(--accent);background:rgba(42,157,143,.07);color:#c3d4da;font-size:14px}
+.rich .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.rich .card-grid .card{margin:0}
+
+
+.rich h3{margin:26px 0 8px}
+.rich p{margin:0 0 14px;color:var(--muted);line-height:1.7}
+.fail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:6px}
+.fail{background:rgba(11,34,43,.55);border:1px solid var(--line);border-radius:14px;padding:18px}
+.fail .v{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--warm,#D6A86A)}
+.fail h3{font-size:16px;margin:8px 0 6px}
+.fail p{font-size:14px;margin:0;color:var(--muted)}
+.rating-head{display:flex;align-items:center;gap:20px;margin:6px 0 18px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(11,34,43,.55)}
+.rating-avg{font-family:var(--mono);font-size:40px;line-height:1;color:var(--accent)}
+.rating-avg small{font-size:14px;color:var(--muted)}
+.rating-head p{margin:4px 0 0;font-size:14px;color:var(--muted);max-width:70ch}
+.rating{display:grid;gap:2px}
+.rating-row{display:grid;grid-template-columns:165px minmax(90px,1fr) 48px;gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.rating-row:last-child{border-bottom:0}
+.rating-name{font-size:13.5px;font-weight:600}
+.rating-bar{height:6px;border-radius:99px;background:rgba(148,190,200,.14);overflow:hidden}
+.rating-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.rating-score{font-family:var(--mono);font-size:12.5px;color:var(--accent);text-align:right}
+.rating-note{grid-column:2/-1;font-size:12.5px;color:var(--muted);margin-top:-4px}
+.faq{display:grid;gap:0;margin-top:4px}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";display:inline-block;width:18px;color:var(--accent);font-family:var(--mono)}
+.faq details[open] summary::before{content:"–"}
+.faq p{margin:10px 0 0 18px;font-size:14px;color:var(--muted)}
+@media(max-width:720px){
+  .fail-grid{grid-template-columns:1fr}
+  .rating-head{flex-direction:column;align-items:flex-start}
+  .rating-row{grid-template-columns:120px 1fr 44px}
+}
+
+
+.detail h2{margin:34px 0 10px;font-size:24px;letter-spacing:-.02em}
+.detail h3{margin:24px 0 8px;font-size:17px}
+.detail p{margin:0 0 14px;color:var(--muted);line-height:1.75}
+.detail ul,.detail ol{margin:0 0 16px 20px;color:var(--muted)}
+.detail li{margin:6px 0}
+.detail table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+.detail th,.detail td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+.detail th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.detail pre{background:rgba(6,20,27,.75);border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;font-size:13px}
+.detail code{font-family:var(--mono);font-size:.92em}
+.detail img{max-width:100%;border-radius:12px;border:1px solid var(--line)}
+.detail blockquote{border-left:2px solid var(--accent);margin:14px 0;padding:2px 0 2px 16px;color:var(--muted)}
+
 </style>
 <link rel="stylesheet" href="assets/community.css?v=1">
 </head>
@@ -182,35 +251,394 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.04em;margin:
   <a href="https://github.com/jmadasme/prototipos-express/tree/main/versions/PrototiposExpress" target="_blank" rel="noopener">Ver carpeta <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </article></div>
 </div></section>
-
-<section class="section tight"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">03 — Cómo se usa</div><h2>De la carpeta a la práctica.</h2></div>
-  <div class="timeline"><div class="step reveal"><div class="step-n">01</div><h4>Revisá la propuesta</h4><p>El texto y el formulario son el núcleo.</p></div><div class="step reveal"><div class="step-n">02</div><h4>Configurá el backend</h4><p>Variables de entorno para el envío.</p></div><div class="step reveal"><div class="step-n">03</div><h4>Desplegá en Netlify</h4><p>Build y ruta de funciones según el README.</p></div><div class="step reveal"><div class="step-n">04</div><h4>Medí respuestas</h4><p>Sin datos no hay validación.</p></div></div>
-</div></section>
-
-<section class="section tight"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">04 — Decisiones</div><h2>Lo que lo hace distinto</h2></div>
-  <div class="features"><div class="feature reveal"><h4>Alcance corto</h4><p>Una hipótesis por prototipo.</p></div><div class="feature reveal"><h4>Netlify</h4><p>Deploy sin administrar servidores.</p></div><div class="feature reveal"><h4>Formulario</h4><p>Captura de interesados.</p></div><div class="feature reveal"><h4>Backend mínimo</h4><p>Solo lo necesario para recibir.</p></div><div class="feature reveal"><h4>Diseño directo</h4><p>Mensaje antes que decoración.</p></div><div class="feature reveal"><h4>Documentado</h4><p>Datasheet y guía de código.</p></div></div>
-</div></section>
-
-<section class="section tight" id="stack"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">05 — Stack y arranque</div><h2>Con qué está construido</h2></div>
-  <div class="stack-grid">
-    <div class="reveal"><div class="chips"><span class="chip">HTML/CSS/JS</span><span class="chip">Node.js</span><span class="chip">Netlify</span></div><div class="note"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Las variables de entorno y el destino de los formularios no se incluyen. Sin ellas el backend no envía nada.</span></div></div>
-    <div class="terminal reveal"><div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><pre>git clone https://github.com/jmadasme/prototipos-express.git
-cd prototipos-express/versions/PrototiposExpress
-# revisá el README para build y variables de entorno
-npm install &amp;&amp; npm run dev</pre></div>
-  </div>
-</div></section>
-
-<section class="section tight" id="docs"><div class="wrap">
-  <div class="section-head reveal"><div class="kicker">06 — Documentación</div><h2>Para usar y para entender.</h2><p class="section-sub">Cada documento está en el repositorio, versionado junto al código.</p></div>
-  <div class="docs"><a class="doc reveal" href="https://github.com/jmadasme/prototipos-express/blob/main/docs/datasheet.md" target="_blank" rel="noopener"><span class="tag">DATASHEET</span><h4>Manual de operación</h4><p>Instalación, configuración, uso y diagnóstico.</p></a><a class="doc reveal" href="https://github.com/jmadasme/prototipos-express/blob/main/docs/developer.md" target="_blank" rel="noopener"><span class="tag">DEVELOPER</span><h4>Guía de código</h4><p>Arquitectura, módulos, contratos y extensión.</p></a><a class="doc reveal" href="https://github.com/jmadasme/prototipos-express/blob/main/docs/REFERENCES.md" target="_blank" rel="noopener"><span class="tag">REFERENCES</span><h4>Referencias</h4><p>Estándares, librerías y fuentes oficiales.</p></a></div>
-</div></section>
-
-<section class="section tight"><div class="wrap"><div class="note reveal"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span><strong>Preservación:</strong> las versiones se copiaron sin <code>.git</code>, <code>node_modules</code>, entornos virtuales, compilados ni bases de datos. Los tokens y claves detectados fueron redactados; las plantillas <code>.example</code> se conservan. Las limitaciones conocidas están en la documentación, no escondidas.</span></div></div></section>
-
+<section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El concepto</div><h2>Qué es y por qué existe</h2></div><div class="rich reveal"><p>Prototipos Express es una landing de captación para un servicio de prototipado rápido de software y hardware. Presenta la propuesta, nueve áreas tecnológicas y un formulario para solicitar una reunión; el producto visible es la página más un backend mínimo que entrega los contactos por correo.</p><p>Está destinada a pymes y equipos que necesitan validar una idea antes de financiar un desarrollo completo. Su valor está en el alcance corto: una hipótesis, un formulario y una vía de contacto medible. No es una plataforma de gestión ni un producto terminado; es un instrumento para comprobar demanda con bajo costo y decidir después.</p></div></div></section>
+<section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">El proyecto en detalle</div><h2>Documentación preservada</h2><p class="section-sub">El README original de la versión de referencia, completo.</p></div><div class="detail rich reveal">
+<p>Landing page profesional para la captura de interesados en servicios de prototipado rapido de soluciones de software y hardware. El sistema permite que un cliente potencial solicite una reunion sin compromiso, detalle su necesidad y plazo deseado, y reciba un prototipo funcional gratuito para testeo. Solo si el prototipo demuestra valor real, el cliente paga por el servicio.</p>
+<hr/>
+<h2 id="indice">Indice</h2>
+<ul>
+<li><a href="#descripcion-del-servicio">Descripcion del servicio</a></li>
+<li><a href="#principio-de-funcionamiento">Principio de funcionamiento</a></li>
+<li><a href="#tecnologias-ofrecidas">Tecnologias ofrecidas</a></li>
+<li><a href="#arquitectura-del-sistema">Arquitectura del sistema</a></li>
+<li><a href="#forma-de-operar-para-el-cliente">Forma de operar (para el cliente)</a></li>
+<li><a href="#ejemplos-de-uso">Ejemplos de uso</a></li>
+<li><a href="#requisitos-del-sistema">Requisitos del sistema</a></li>
+<li><a href="#configuracion-del-correo-electronico">Configuracion del correo electronico</a></li>
+<li><a href="#ejecucion-local-del-proyecto">Ejecucion local del proyecto</a></li>
+<li><a href="#estructura-del-proyecto">Estructura del proyecto</a></li>
+<li><a href="#advertencias-y-precauciones">Advertencias y precauciones</a></li>
+</ul>
+<hr/>
+<h2 id="descripcion-del-servicio">Descripcion del servicio</h2>
+<p><strong>PrototiposExpress</strong> es un servicio de prototipado rapido que transforma conceptos e ideas en prototipos funcionales reales de software y hardware, sin costo inicial para el cliente. El equipo esta compuesto por <strong>6 tecnicos altamente capacitados</strong> con movilizacion propia y experiencia comprobada en industrias exigentes como casinos, financieras, retail y banca.</p>
+<p>La propuesta de valor es simple: el cliente no arriesga nada. PrototiposExpress desarrolla un prototipo funcional, el cliente lo prueba en su entorno real, y solo si encuentra valor tangible, se acuerda un modelo de pago justo.</p>
+<hr/>
+<h2 id="principio-de-funcionamiento">Principio de funcionamiento</h2>
+<p>El servicio opera bajo un modelo de <strong>captura de necesidad - prototipado - testeo gratuito - pago por valor</strong>:</p>
+<pre><code>Solicitud de reunion
+        |
+        v
+Captura de necesidad y deadline
+        |
+        v
+Desarrollo de prototipo funcional (sin costo)
+        |
+        v
+Periodo de pruebas sin compromiso
+        |
+        v
+Si hay valor real -&gt; Pago por servicio
+Si no hay valor -&gt; Sin costo, sin compromiso
+</code></pre>
+<h3 id="detalle-del-ciclo">Detalle del ciclo</h3>
+<ol>
+<li><strong>Solicitud de reunion</strong>: El cliente completa un formulario en la landing page con sus datos, descripcion de la necesidad y plazo deseado.</li>
+<li><strong>Analisis de requerimientos</strong>: El equipo de PrototiposExpress se reune con el cliente (presencial o virtual) para entender a fondo el problema, el alcance y las restricciones tecnicas.</li>
+<li><strong>Prototipado funcional</strong>: Se desarrolla un prototipo real y funcional de la solucion, utilizando las tecnologias mas adecuadas para el caso.</li>
+<li><strong>Pruebas sin costo</strong>: El cliente recibe el prototipo y lo evalua en su entorno real durante el periodo acordado, sin ningun compromiso de pago.</li>
+<li><strong>Pago por valor</strong>: Si el prototipo demuestra valor real para el negocio del cliente, se acuerda un modelo de servicio justo. En caso contrario, no hay costo alguno.</li>
+</ol>
+<hr/>
+<h2 id="tecnologias-ofrecidas">Tecnologias ofrecidas</h2>
+<p>PrototiposExpress abarca <strong>9 areas tecnologicas</strong> para cubrir practicamente cualquier necesidad de prototipado:</p>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Tecnologias</th>
+<th>Aplicaciones tipicas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>Frontend + Backend (HTML, CSS, JavaScript, Python, etc.)</td>
+<td>Aplicaciones web completas, paneles de control, portales</td>
+</tr>
+<tr>
+<td><strong>Escritorio Windows</strong></td>
+<td>.exe, .msi, .NET, C++</td>
+<td>Programas nativos Windows con interfaz grafica profesional</td>
+</tr>
+<tr>
+<td><strong>Escritorio Linux (Debian)</strong></td>
+<td>GTK, Qt, Python, aplicaciones nativas</td>
+<td>Software para distribuciones Debian y derivadas (Ubuntu, Mint)</td>
+</tr>
+<tr>
+<td><strong>Servicios / APIs</strong></td>
+<td>Flask, REST, microservicios, procesos background</td>
+<td>APIs REST, automatizacion, integracion de sistemas</td>
+</tr>
+<tr>
+<td><strong>Hardware WiFi</strong></td>
+<td>ESP32, ESP8266</td>
+<td>IoT, sensores inalambricos, domotica, monitoreo remoto</td>
+</tr>
+<tr>
+<td><strong>Bluetooth / BLE</strong></td>
+<td>HC-05, HC-06, nRF, BLE</td>
+<td>Comunicacion inalambrica de corto alcance, beacons, perifericos</td>
+</tr>
+<tr>
+<td><strong>LoRa</strong></td>
+<td>SX127x, Heltec, LPWAN</td>
+<td>Comunicacion de largo alcance y bajo consumo, sensores remotos</td>
+</tr>
+<tr>
+<td><strong>Ethernet</strong></td>
+<td>Conexion por cable, servidores embebidos</td>
+<td>IoT industrial, sistemas criticos, comunicacion cableada</td>
+</tr>
+<tr>
+<td><strong>Radiofrecuencia</strong></td>
+<td>433 MHz, 315 MHz, nRF24L01</td>
+<td>Telemetria, control remoto, sensores inalambricos de bajo costo</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="arquitectura-del-sistema">Arquitectura del sistema</h2>
+<p>El proyecto es un <strong>sitio 100% estatico</strong> (HTML + CSS + JS plano) optimizado para <strong>Netlify</strong>. El formulario de contacto utiliza <strong>Netlify Forms</strong>, que captura los datos automaticamente y los entrega via notificacion por email sin necesidad de backend.</p>
+<pre><code>+------------------------------------------------------------------+
+|                    NETLIFY (Hosting + Forms)                       |
+|                                                                   |
+|   https://prototiposexpress.netlify.app/                           |
+|          |                                                         |
+|   GET /  ---------&gt;  frontend/index.html  (Landing page)          |
+|   GET /css/* -----&gt;  styles.css  (Estilos y animaciones)          |
+|   GET /js/* ------&gt;  main.js     (Logica de cliente)              |
+|          |                                                         |
+|   POST / (Form AJAX) ---&gt; Netlify Forms captura los datos         |
+|          |                    y envia notificacion email           |
+|   +------------------------------------------------------------+  |
+|   | Frontend:                                                   |  |
+|   | - Landing page profesional                                  |  |
+|   | - Formulario de contacto con validacion en tiempo real      |  |
+|   | - Animaciones de scroll con Intersection Observer           |  |
+|   | - Diseño responsive (320px a 1920px+)                       |  |
+|   | - Navegacion suave entre secciones                          |  |
+|   | - Envio AJAX a Netlify Forms                                |  |
+|   +------------------------------------------------------------+  |
++------------------------------------------------------------------+
+                               |
+              Netlify Forms (notificacion email)
+                               |
++------------------------------v------------------------------------+
+|                       CORREO DESTINO                               |
+|                                                                   |
+|   jmadasme@gmail.com                                               |
+|   (configurable desde dashboard Netlify)                          |
++------------------------------------------------------------------+
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong>: Localmente, el formulario envia los datos a Netlify Forms solo cuando el sitio esta desplegado en Netlify. Para desarrollo local, el formulario mostrara un mensaje de confirmacion simulado (ver seccion de Ejecucion Local).</p>
+</blockquote>
+<h3 id="flujo-de-datos-del-formulario">Flujo de datos del formulario</h3>
+<ol>
+<li>El usuario completa el formulario en la landing page y hace clic en "Enviar solicitud".</li>
+<li>El frontend (main.js) valida cada campo en tiempo real: campos vacios, formato de email, formato de telefono, fecha valida.</li>
+<li>Si la validacion es exitosa, se realiza una peticion <code>fetch POST /api/contacto</code> con un JSON que contiene <code>{nombre, email, telefono, empresa, necesidad, plazo}</code>.</li>
+<li>El backend Flask recibe los datos, los valida nuevamente (doblez defensivo), compone un email con formato HTML profesional y lo envia via SMTP de Gmail.</li>
+<li>El backend responde con <code>{"status": "ok"}</code> en caso de exito, o <code>{"status": "error", "message": "..."}</code> en caso de error.</li>
+<li>El frontend muestra un mensaje de exito o error al usuario segun la respuesta.</li>
+</ol>
+<hr/>
+<h2 id="forma-de-operar-para-el-cliente">Forma de operar (para el cliente)</h2>
+<h3 id="paso-1-acceder-a-la-landing-page">Paso 1: Acceder a la landing page</h3>
+<p>Abre la pagina web de PrototiposExpress en tu navegador. La pagina se carga con un diseno moderno y oscuro, con navegacion superior fija.</p>
+<h3 id="paso-2-conocer-el-servicio">Paso 2: Conocer el servicio</h3>
+<p>Navega por las secciones para entender como funciona el servicio, que tecnologias ofrecemos y en que industrias tenemos experiencia:
+- <strong>Como funciona</strong>: Explica el pipeline de 5 pasos.
+- <strong>Tecnologias</strong>: Muestra las 9 areas tecnologicas que dominamos.
+- <strong>Industrias</strong>: Sectores donde tenemos experiencia comprobada.
+- <strong>Equipo</strong>: Informacion sobre los 6 tecnicos.
+- <strong>Por que nosotros</strong>: Diferenciadores clave.</p>
+<h3 id="paso-3-solicitar-una-reunion">Paso 3: Solicitar una reunion</h3>
+<p>Desplazate hasta la seccion "Solicita tu reunion" (o haz clic en el boton "Solicitar reunion" en el menu de navegacion). Completa el formulario con:</p>
+<ul>
+<li><strong>Nombre completo</strong>: Tu nombre o el de tu empresa.</li>
+<li><strong>Correo electronico</strong>: Un email valido donde recibir la respuesta.</li>
+<li><strong>Telefono</strong>: Numero de contacto.</li>
+<li><strong>Empresa</strong>: Nombre de tu organizacion.</li>
+<li><strong>Describe tu necesidad</strong>: Explica tu idea, el problema que resuelve y la tecnologia que imaginas. Cuanto mas detalle, mejor.</li>
+<li><strong>Plazo deseado</strong>: Fecha estimada en la que necesitas el prototipo.</li>
+</ul>
+<h3 id="paso-4-envio-y-confirmacion">Paso 4: Envio y confirmacion</h3>
+<p>Haz clic en "Enviar solicitud". Recibiras una confirmacion visual en la pagina indicando que tu solicitud fue enviada con exito. El equipo de PrototiposExpress te contactara en un maximo de <strong>24 horas</strong> para agendar una reunion sin compromiso.</p>
+<h3 id="paso-5-reunion-y-prototipado">Paso 5: Reunion y prototipado</h3>
+<p>Tras la reunion, el equipo analizara tus requerimientos y desarrollara un prototipo funcional. Recibiras el prototipo para pruebas sin ningun costo inicial.</p>
+<hr/>
+<h2 id="ejemplos-de-uso">Ejemplos de uso</h2>
+<h3 id="ejemplo-1-sistema-de-monitoreo-de-temperatura-con-lora">Ejemplo 1: Sistema de monitoreo de temperatura con LoRa</h3>
+<p>Un cliente del sector agricola necesita monitorear la temperatura de sus invernaderos en tiempo real:</p>
+<ol>
+<li><strong>Solicitud</strong>: Completa el formulario indicando necesidad de monitoreo IoT, plazo de 3 semanas.</li>
+<li><strong>Reunion</strong>: Se acuerda usar sensores con modulo LoRa SX1278 para largo alcance.</li>
+<li><strong>Prototipo</strong>: Se entregan 3 nodos sensores con LoRa + gateway central con dashboard web.</li>
+<li><strong>Pruebas</strong>: El cliente instala los sensores en sus invernaderos durante 2 semanas.</li>
+<li><strong>Resultado</strong>: El sistema funciona correctamente, reduciendo perdidas en un 15%. Se acuerda un servicio de mantenimiento y escalado.</li>
+</ol>
+<h3 id="ejemplo-2-aplicacion-de-escritorio-para-gestion-de-inventario">Ejemplo 2: Aplicacion de escritorio para gestion de inventario</h3>
+<p>Un retail necesita una aplicacion Windows para gestionar inventario en local:</p>
+<ol>
+<li><strong>Solicitud</strong>: Formulario describiendo la necesidad de una app .exe con base de datos local.</li>
+<li><strong>Reunion</strong>: Se definen funcionalidades: escaneo de codigos de barras, reportes, exportacion a Excel.</li>
+<li><strong>Prototipo</strong>: Se entrega un instalador .msi con la aplicacion funcional.</li>
+<li><strong>Pruebas</strong>: El cliente prueba en 3 sucursales durante 1 mes.</li>
+<li><strong>Resultado</strong>: La aplicacion agiliza el inventario en un 40%. Se acuerda licenciamiento por sucursal.</li>
+</ol>
+<h3 id="ejemplo-3-api-rest-para-integracion-bancaria">Ejemplo 3: API REST para integracion bancaria</h3>
+<p>Una fintech necesita una API para procesar pagos:</p>
+<ol>
+<li><strong>Solicitud</strong>: Formulario detallando la necesidad de una API REST con autenticacion.</li>
+<li><strong>Reunion</strong>: Se definen endpoints, esquemas de datos, requisitos de seguridad.</li>
+<li><strong>Prototipo</strong>: Se entrega API Flask con documentacion Swagger, endpoints funcionales.</li>
+<li><strong>Pruebas</strong>: El equipo de la fintech integra la API en su entorno de pruebas.</li>
+<li><strong>Resultado</strong>: La API maneja 1000 transacciones/min sin errores. Se firma contrato anual.</li>
+</ol>
+<hr/>
+<h2 id="requisitos-del-sistema">Requisitos del sistema</h2>
+<h3 id="para-ejecutar-el-frontend">Para ejecutar el frontend</h3>
+<ul>
+<li>Cualquier navegador web moderno (Chrome, Firefox, Edge, Safari).</li>
+<li>No requiere instalacion de dependencias. El frontend es estatico (HTML + CSS + JS).</li>
+<li>Conexion a internet para cargar FontAwesome desde CDN.</li>
+</ul>
+<h3 id="para-ejecutar-el-backend">Para ejecutar el backend</h3>
+<ul>
+<li><strong>Python 3.9+</strong> instalado en el sistema.</li>
+<li><strong>pip</strong> (gestor de paquetes de Python).</li>
+<li>Acceso a internet para envio de correos SMTP.</li>
+<li>Cuenta de Gmail con <strong>contraseña de aplicacion</strong> configurada.</li>
+</ul>
+<h3 id="compatibilidad-de-navegadores">Compatibilidad de navegadores</h3>
+<table>
+<thead>
+<tr>
+<th>Navegador</th>
+<th>Version minima</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Chrome</td>
+<td>60+</td>
+<td>Compatible</td>
+</tr>
+<tr>
+<td>Mozilla Firefox</td>
+<td>55+</td>
+<td>Compatible</td>
+</tr>
+<tr>
+<td>Microsoft Edge</td>
+<td>79+</td>
+<td>Compatible</td>
+</tr>
+<tr>
+<td>Apple Safari</td>
+<td>12+</td>
+<td>Compatible</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="configuracion-del-correo-electronico">Configuracion del correo electronico</h2>
+<p>El backend utiliza Gmail SMTP para enviar los correos. Es necesario configurar una <strong>contraseña de aplicacion</strong> de Gmail, ya que Google no permite el uso de la contraseña normal de la cuenta para accesos SMTP desde aplicaciones externas.</p>
+<h3 id="paso-1-crear-una-contrasena-de-aplicacion-en-gmail">Paso 1: Crear una contraseña de aplicacion en Gmail</h3>
+<ol>
+<li>Inicia sesion en tu cuenta de Google (la que usaras como remitente, por ejemplo <code>jmadasme@gmail.com</code>).</li>
+<li>Ve a tu cuenta de Google: <a href="https://myaccount.google.com/security">myaccount.google.com/security</a>.</li>
+<li>Activa la <strong>Verificacion en dos pasos</strong> si aun no lo has hecho (es requisito para crear contraseñas de aplicacion).</li>
+<li>Una vez activada la verificacion en dos pasos, busca "Contraseñas de aplicacion" en el buscador de la pagina de seguridad o ve a: <a href="https://myaccount.google.com/apppasswords">myaccount.google.com/apppasswords</a>.</li>
+<li>Selecciona "Correo" como aplicacion y "Windows" (u "Otra") como dispositivo.</li>
+<li>Google generara una contraseña de 16 caracteres (ejemplo: <code>abcd efgh ijkl mnop</code>). <strong>Copiala inmediatamente</strong> porque no se mostrara de nuevo.</li>
+</ol>
+<h3 id="paso-2-configurar-las-variables-de-entorno">Paso 2: Configurar las variables de entorno</h3>
+<p>Crea un archivo <code>.env</code> en la carpeta <code>backend/</code> con el siguiente contenido:</p>
+<pre><code class="language-env">SMTP_USER=jmadasme@gmail.com
+SMTP_PASS=abcd efgh ijkl mnop
+</code></pre>
+<p>Reemplaza los valores con tu correo y la contraseña de aplicacion generada.</p>
+<p><strong>Nota</strong>: Si usas otro correo como remitente, tambien puedes configurar el destinatario:</p>
+<pre><code class="language-env">SMTP_USER=tu_correo@gmail.com
+SMTP_PASS=tu_contraseña_de_aplicacion
+TO_EMAIL=jmadasme@gmail.com
+</code></pre>
+<hr/>
+<h2 id="despliegue-en-netlify-recomendado">Despliegue en Netlify (recomendado)</h2>
+<p>La forma mas rapida de poner el sitio en produccion.</p>
+<h3 id="metodo-1-deploy-desde-github-automatico">Metodo 1: Deploy desde GitHub (automatico)</h3>
+<ol>
+<li>Sube este repositorio a tu cuenta de GitHub.</li>
+<li>Ve a <a href="https://app.netlify.com">app.netlify.com</a> e inicia sesion con GitHub.</li>
+<li>Haz clic en <strong>"Add new site"</strong> → <strong>"Import an existing project"</strong>.</li>
+<li>Conecta tu repositorio de GitHub.</li>
+<li>Configuracion automatica (Netlify detectara <code>netlify.toml</code>):
+   - <strong>Publish directory</strong>: <code>frontend</code>
+   - <strong>Build command</strong>: <em>ninguno</em> (es HTML/CSS/JS plano)</li>
+<li>Haz clic en <strong>"Deploy site"</strong>.</li>
+</ol>
+<h3 id="metodo-2-deploy-manual-drag-drop">Metodo 2: Deploy manual (drag &amp; drop)</h3>
+<ol>
+<li>Arrastra la carpeta <code>frontend/</code> al area de upload en <a href="https://app.netlify.com/drop">app.netlify.com/drop</a>.</li>
+</ol>
+<h3 id="configurar-notificaciones-del-formulario">Configurar notificaciones del formulario</h3>
+<p>Una vez desplegado:</p>
+<ol>
+<li>Ve a <strong>Site settings</strong> → <strong>Forms</strong> → <strong>Form notifications</strong>.</li>
+<li>Agrega una <strong>Email notification</strong> para el formulario <code>contacto</code>.</li>
+<li>Ingresa <strong>jmadasme@gmail.com</strong> como destinatario.</li>
+<li>Netlify enviara un email cada vez que alguien complete el formulario.</li>
+</ol>
+<h3 id="opcional-dominio-personalizado">(Opcional) Dominio personalizado</h3>
+<p>En <strong>Site settings</strong> → <strong>Domain management</strong> puedes configurar un dominio propio.</p>
+<hr/>
+<h2 id="ejecucion-local-desarrollo">Ejecucion local (desarrollo)</h2>
+<p>El sitio es 100% estatico, por lo que puedes servirlo con cualquier servidor HTTP simple:</p>
+<h3 id="opcion-a-python-mas-simple">Opcion A: Python (mas simple)</h3>
+<pre><code class="language-bash">cd proyectos/PrototiposExpress/frontend
+python3 -m http.server 8000
+# Abrir http://localhost:8000
+</code></pre>
+<h3 id="opcion-b-live-server-vs-code">Opcion B: Live Server (VS Code)</h3>
+<p>Con la extension <strong>Live Server</strong>, hacer clic derecho en <code>index.html</code> → <strong>"Open with Live Server"</strong>.</p>
+<h3 id="opcion-c-backend-flask-con-envio-real-de-correos">Opcion C: Backend Flask (con envio real de correos)</h3>
+<p>Si deseas probar el envio de correos localmente con el backend Flask:</p>
+<pre><code class="language-bash">cd proyectos/PrototiposExpress/backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+# Editar .env con SMTP_USER y SMTP_PASS
+python app.py
+# Abrir http://localhost:5000
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong>: Cuando usas el backend Flask, debes cambiar el fetch en <code>main.js</code> a <code>'/api/contacto'</code> para que funcione localmente (en lugar del endpoint de Netlify Forms).</p>
+</blockquote>
+<hr/>
+<h2 id="estructura-del-proyecto">Estructura del proyecto</h2>
+<pre><code>proyectos/PrototiposExpress/
+├── README.md                        &lt;- Este archivo
+├── PLAN.md                          &lt;- Plan original del proyecto
+├── AUDIT_REPORT.md                  &lt;- Informe de auditoria de codigo
+├── netlify.toml                     &lt;- Configuracion de deploy en Netlify
+├── frontend/
+│   ├── index.html                   &lt;- Landing page (estructura HTML)
+│   ├── css/
+│   │   └── styles.css               &lt;- Estilos CSS (responsive, animaciones)
+│   └── js/
+│       └── main.js                  &lt;- Logica frontend (navegacion, formulario, animaciones)
+├── backend/                         &lt;- Backend Flask (solo para desarrollo local)
+│   ├── app.py                       &lt;- Servidor Flask (frontend + API)
+│   ├── requirements.txt             &lt;- Dependencias Python
+│   ├── .env.example                 &lt;- Plantilla para variables de entorno
+│   └── .env                         &lt;- Variables de entorno (NO SUBIR A GIT)
+└── docs/
+    ├── datasheet.md                 &lt;- Documentacion de usuario y preguntas frecuentes
+    └── developer.md                 &lt;- Documentacion tecnica para desarrolladores
+</code></pre>
+<hr/>
+<h2 id="advertencias-y-precauciones">Advertencias y precauciones</h2>
+<h3 id="seguridad-de-credenciales">Seguridad de credenciales</h3>
+<ul>
+<li><strong>NUNCA subas el archivo <code>.env</code></strong> a repositorios publicos o compartas las credenciales SMTP.</li>
+<li>El archivo <code>.env</code> contiene la contraseña de aplicacion de Gmail, que permite enviar correos desde tu cuenta.</li>
+<li>Si accidentalmente subes credenciales a un repositorio publico, cambia inmediatamente tu contraseña de aplicacion desde la configuracion de Google.</li>
+<li>Para desarrollo local, mantén el <code>.env</code> en <code>backend/.env</code> (ya esta incluido en <code>.gitignore</code> si configuras el repositorio adecuadamente).</li>
+</ul>
+<h3 id="configuracion-smtp">Configuracion SMTP</h3>
+<ul>
+<li>La contraseña de aplicacion de Gmail solo funciona si la <strong>Verificacion en dos pasos</strong> esta activada en la cuenta de Google.</li>
+<li>Si cambias la contraseña de tu cuenta de Google, las contraseñas de aplicacion existentes siguen funcionando. Si las revocas, debes generar nuevas.</li>
+<li>Gmail impone limites de envio: maximo 500 destinatarios por dia y 2,000 mensajes por dia (para cuentas gratuitas).</li>
+</ul>
+<h3 id="produccion">Produccion</h3>
+<ul>
+<li>El servidor Flask incluido es para <strong>desarrollo</strong>. En produccion, usa un servidor WSGI como Gunicorn o uWSGI.</li>
+<li>Configura variables de entorno en el servidor de produccion, no uses archivos <code>.env</code> en entornos productivos a menos que esten correctamente protegidos.</li>
+<li>Considera usar HTTPS en produccion para proteger la comunicacion entre frontend y backend.</li>
+<li>Si despliegas en Render, Railway, Heroku o similar, configura las variables de entorno desde el panel de administracion de la plataforma.</li>
+</ul>
+<h3 id="compatibilidad">Compatibilidad</h3>
+<ul>
+<li>El frontend usa Intersection Observer API, que es compatible con navegadores modernos pero puede no funcionar en navegadores muy antiguos. main.js incluye un fallback para esta situacion.</li>
+<li>El formulario requiere JavaScript habilitado para funcionar. Sin JS, el formulario no se enviara.</li>
+<li>FontAwesome se carga desde CDN. Sin conexion a internet, los iconos no se mostraran (pero el resto de la pagina funciona).</li>
+</ul>
+<h3 id="privacidad">Privacidad</h3>
+<ul>
+<li>Los datos del formulario se envian por correo electronico sin cifrado de extremo a extremo. Se recomienda no enviar informacion altamente sensible a traves del formulario.</li>
+<li>Los datos se almacenan unicamente en el correo de destino. No hay base de datos asociada al proyecto.</li>
+</ul>
+<hr/>
+<h2 id="licencia">Licencia</h2>
+<p>Este proyecto es de codigo abierto. Todos los derechos reservados 2026 PrototiposExpress.</p></div></div></section>
+<section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Lo que no funcionó</div><h2>Los tropiezos, documentados</h2><p class="section-sub">Las primeras versiones existen para que estos errores no se repitan: cada una dejó una decisión de diseño verificable.</p></div><div class="fail-grid reveal"><div class="fail"><div class="v">PrototiposExpress</div><h3>Formulario atado a Netlify</h3><p>El formulario envía a Netlify Forms mediante fetch a la raíz del sitio, de modo que solo confirma envíos cuando la página está desplegada en Netlify. El backend Flask existe, pero el README indica cambiar a mano la URL a /api/contacto para probarlo localmente. Se mantuvo el sitio estático y el backend como alternativa de desarrollo.</p></div><div class="fail"><div class="v">PrototiposExpress</div><h3>Leads solo por correo</h3><p>Los datos del formulario no se guardan en una base: se envían por correo y quedan solo en la bandeja de destino. El README descarta autenticación, cuentas y persistencia, así que no hay forma de consultar, deduplicar ni medir leads desde el sitio. La limitación es explícita y acota el uso a validación inicial.</p></div><div class="fail"><div class="v">PrototiposExpress</div><h3>Credenciales SMTP manuales</h3><p>El envío real depende de una cuenta de Gmail con verificación en dos pasos y una contraseña de aplicación configurada en variables de entorno. Sin SMTP_USER y SMTP_PASS, el backend responde con error de configuración. El servidor Flask se declara solo para desarrollo y no se despliega en Netlify.</p></div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Ficha de evaluación</div><h2>Cómo se mide este proyecto</h2><p class="section-sub">Seis criterios con la misma escala en todo el catálogo, para comparar sin marketing.</p></div><div class="rating-head reveal"><div class="rating-avg">3.2<small>/5</small></div><div><strong>Madurez global</strong><p>Es un ejercicio de validación temprana: landing estática y backend mínimo, con límites claros y una documentación más ambiciosa que el producto. El conjunto sirve para medir interés, no para operar un servicio.</p></div></div><div class="rating reveal"><div class="rating-row"><div class="rating-name">Madurez</div><div class="rating-bar"><i style="width:40%"></i></div><div class="rating-score">2/5</div><div class="rating-note">Landing y backend mínimo sin autenticación, persistencia ni pruebas automatizadas; el alcance declarado es validar demanda.</div></div><div class="rating-row"><div class="rating-name">Reproducibilidad</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">El frontend se sirve con cualquier servidor HTTP; el backend exige Python 3.9+, dependencias y credenciales SMTP válidas.</div></div><div class="rating-row"><div class="rating-name">Documentación</div><div class="rating-bar"><i style="width:80%"></i></div><div class="rating-score">4/5</div><div class="rating-note">README, datasheet y guía de desarrollador cubren instalación, API y despliegue; la descripción del flujo alterna Netlify y Flask.</div></div><div class="rating-row"><div class="rating-name">Honestidad de límites</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">Declara que no hay base de datos, autenticación ni backend en producción, pero la arquitectura y el flujo del formulario se contradicen.</div></div><div class="rating-row"><div class="rating-name">Valor demostrativo</div><div class="rating-bar"><i style="width:60%"></i></div><div class="rating-score">3/5</div><div class="rating-note">Muestra captación, validación en dos capas y despliegue estático; los casos y métricas del README son ilustrativos, no resultados verificados.</div></div><div class="rating-row"><div class="rating-name">Facilidad de despliegue</div><div class="rating-bar"><i style="width:80%"></i></div><div class="rating-score">4/5</div><div class="rating-note">Netlify publica la carpeta frontend sin build; el backend opcional requiere variables de entorno y un servidor WSGI.</div></div></div></div></section><section class="section tight"><div class="wrap"><div class="section-head reveal"><div class="kicker">Preguntas típicas</div><h2>Lo que suelen preguntar</h2></div><div class="faq reveal"><details><summary>¿Es un producto terminado?</summary><p>No. Es una landing de validación con backend mínimo.</p></details><details><summary>¿Necesito Netlify?</summary><p>Se puede desplegar en otro hosting; la configuración incluida es para Netlify.</p></details><details><summary>¿Dónde llegan los datos?</summary><p>Al destino configurado en las variables de entorno. No hay base de datos incluida.</p></details><details><summary>¿Puedo cambiar el texto?</summary><p>Sí, es la parte que más conviene iterar.</p></details><details><summary>¿Tiene autenticación?</summary><p>No. No maneja cuentas.</p></details></div></div></section>
 <section class="cta"><div class="wrap"><div class="cta-box reveal">
   <div class="kicker">Siguiente paso</div><h2>¿Te animás?</h2>
   <p>Usá esta familia como base para prototipos express. Está documentada para que puedas entenderla, ejecutarla y continuarla sin adivinar.</p>
